@@ -1,0 +1,16 @@
+.directoryListing{
+    width: 100%;
+    height: 100%;
+}
+
+.listingItem{
+    width: 100%;
+    height: 30px;
+    border: 1px solid transparent;
+    text-align: left;
+    cursor: pointer;
+    &:hover{
+        border: 1px solid black;
+
+    }
+}

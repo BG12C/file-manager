@@ -14,7 +14,7 @@ async fn main() {
     tokio::task::spawn(async move {
         loop {
             println!("Baum");
-            thread::sleep(Duration::from_secs(1));
+            thread::sleep(Duration::from_secs(10));
         }
     });
 
@@ -22,8 +22,4 @@ async fn main() {
         .invoke_handler(tauri::generate_handler![greet])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
-
-
-
-
 }
